@@ -1,0 +1,162 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo systemctl enable ssh
+    4  sudo systemctl start ssh
+    5  sudo systemctl status ssh
+    6  sudo adduser user03
+    7  sudo deluser --remove-home user03
+    8  sudo adduser user03
+    9  sudo usermod -aG sudo user03
+   10  sudo usermod -aG docker user03
+   11  ssh-keygen
+   12  su - user03
+   13  sudo apt update
+   14  sudo apt upgrade -y
+   15  ip a
+   16  systemctl status ssh
+   17  ip a
+   18  systemctl status ssh
+   19  ip a
+   20  sudo reboot now
+   21  ip a
+   22  sudo reboot now
+   23  ls
+   24  exit
+   25  echo "I am on my way to passing the Cisco DEVASC exam" > DEVASC.txt
+   26  ls -la
+   27  cat DEVASC.txt
+   28  git status
+   29  git add DEVASC.txt
+   30  mv ~/DEVASC.txt ~/labs/devnet-src/git-intro/
+   31  ls -l ~/labs/devnet-src/
+   32  mkdir -p ~/labs/devnet-src/git-intro
+   33  cd ~/labs/devnet-src/git-intro
+   34  git init
+   35  mv ~/DEVASC.txt .
+   36  git add DEVASC.txt
+   37  git commit -m "Committing DEVASC.txt to begin tracking changes"
+   38  git log
+   39  echo "I am beginning to understand Git!" >> DEVASC.txt
+   40  cat DEVASC.txt
+   41  git status
+   42  git add DEVASC.txt
+   43  git commit -m "Added additional line to file"
+   44  git log
+   45  git branch feature
+   46  git branch
+   47  git checkout feature
+   48  git branch
+   49  echo "This text was added originally while in the feature branch" >> DEVASC.txt
+   50  cat DEVASC.txt
+   51  git add DEVASC.txt
+   52  git status
+   53  git commit -m "Added a third line in feature branch"
+   54  git log
+   55  git checkout master
+   56  git branch
+   57  git merge feature
+   58  cat DEVASC.txt
+   59  git branch
+   60  git branch -d feature
+   61  git branch
+   62  git branch test
+   63  git checkout test
+   64  git branch
+   65  sed -i 's/Cisco/NetAcad/' DEVASC.txt
+   66  cat DEVASC.txt
+   67  git commit -a -m "Change Cisco to NetAcad"
+   68  git checkout master
+   69  sed -i 's/Cisco/DevNet/' DEVASC.txt
+   70  cat DEVASC.txt
+   71  git commit -a -m "Changed Cisco to DevNet"
+   72  git merge test
+   73  cat DEVASC.txt
+   74  nano DEVASC.txt
+   75  git add DEVASC.txt
+   76  git commit -a -m "Manually merged from test branch"
+   77  git log
+   78  cd ~/labs/devnet-src/git-intro
+   79  mkdir devasc-study-team
+   80  cd devasc-study-teamcp
+   81  cd ~/labs/devnet-src/git-intro
+   82  mkdir devasc-study-team
+   83  cd devasc-study-teamcp
+   84  cd devasc-study-team
+   85  cp ../DEVASC.txt .
+   86  git init
+   87  git config --list
+   88  git add DEVASC.txt
+   89  git commit -m "Add DEVASC.txt file to devasc-study-team"
+   90  cd
+   91  cd ~/labs/devnet-src/python
+   92  nano myCity.py
+   93  python3 myCity.py
+   94  nano myLocation.py
+   95  python3 myLocation.py
+   96  nano circleClass.py
+   97  python3 circleClass.py
+   98  cd
+   99  cd ~/labs/devnet-src/unittest
+  100  nano recursive_json_search.py
+  101  python3 recursive_json_search.py
+  102  nano test_json_search.py
+  103  python3 -m unittest
+  104  cd
+  105  ls
+  106  cd ~/labs/devnet-src/parsing/
+  107  ls
+  108  python3 parse_json.py
+  109  python3 parsejson.py
+  110  python3 parse_csv.py
+  111  ls
+  112  python3 parsejson.py
+  113  python3 parsexml.py
+  114  python3 parseyaml.py
+  115  exit
+  116  ip a
+  117  ls
+  118  ip a
+  119  python3 -V
+  120  which python3
+  121  /usr/bin/python3
+  122  cd labs/devnet-src/python/
+  123  python3 -m venv devfun
+  124  source devfun/bin/activate
+  125  pip3 freeze
+  126  pip3 install requests
+  127  pip3 freeze
+  128  deactivate
+  129  python3 -m pip freeze | grep requests
+  130  source devfun/bin/activate
+  131  pip3 freeze > requirements.txt
+  132  deactivate
+  133  python3 -m venv devnew
+  134  source devnew/bin/activate
+  135  pip3 install -r requirements.txt
+  136  pip3 freeze
+  137  deactivate
+  138  history > devtools_history.txt
+  139  ip a
+  140  cd ~/labs/devnet-src/
+  141  git init && git remote add origin https://github.com/isim4as/devascLab.git
+  142  git add .
+  143  git commit -m "Initial commit with completed DevNet labs"
+  144  git push -u origin master
+  145  ping -c 3 github.com
+  146  git remote remove origin
+  147  git remote add origin https://github.com/isim4as/devascLab.git
+  148  git add .
+  149  git commit -m "Initial commit with labs"
+  150  git push -u origin master
+  151  sudo systemd-resolve --flush-caches
+  152  git remote remove origin
+  153  git remote add origin https://github.com/isim4as/devascLab.git
+  154  git add .
+  155  git commit -m "Initial commit with labs"
+  156  git push -u origin master
+  157  git remote remove origin
+  158  git remote add origin https://github.com/isim4s/devascLab.git
+  159  git add .
+  160  git commit -m "Initial commit with labs"
+  161  git push -u origin master
+  162  history > cli_history.txt
