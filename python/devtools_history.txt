@@ -1,0 +1,44 @@
+    1  sudo apt update
+    2  sudo apt upgrade -y
+    3  sudo systemctl enable ssh
+    4  sudo systemctl start ssh
+    5  sudo systemctl status ssh
+    6  sudo adduser user03
+    7  sudo deluser --remove-home user03
+    8  sudo adduser user03
+    9  sudo usermod -aG sudo user03
+   10  sudo usermod -aG docker user03
+   11  ssh-keygen
+   12  su - user03
+   13  sudo apt update
+   14  sudo apt upgrade -y
+   15  ip a
+   16  systemctl status ssh
+   17  ip a
+   18  systemctl status ssh
+   19  ip a
+   20  sudo reboot now
+   21  ip a
+   22  sudo reboot now
+   23  ls
+   24  exit
+   25  python3 -V
+   26  which python3
+   27  /usr/bin/python3
+   28  cd labs/devnet-src/python/
+   29  python3 -m venv devfun
+   30  source devfun/bin/activate
+   31  pip3 freeze
+   32  pip3 install requests
+   33  pip3 freeze
+   34  deactivate
+   35  python3 -m pip freeze | grep requests
+   36  source devfun/bin/activate
+   37  pip3 freeze > requirements.txt
+   38  deactivate
+   39  python3 -m venv devnew
+   40  source devnew/bin/activate
+   41  pip3 install -r requirements.txt
+   42  pip3 freeze
+   43  deactivate
+   44  history > devtools_history.txt
